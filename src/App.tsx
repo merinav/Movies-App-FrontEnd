@@ -12,7 +12,6 @@ async function fetchStatus() {
 
 function App(): JSX.Element {
   const { data: healthy } = useQuery('status', fetchStatus);
-  // TODO: Add Logo icon to the Header and style it properly
   return (
     <Layout
       footer={<>Footer</>}

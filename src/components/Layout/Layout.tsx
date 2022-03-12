@@ -9,11 +9,14 @@ type LayoutProps = {
 };
 
 const Layout = ({ children, header, footer }: LayoutProps): JSX.Element => (
-  // TODO: Update the below code to match AC's
   <>
-    <div className={styles.main}>
+    <div className={styles.contentWrapper}>
       <header>{header}</header>
+    </div>
+    <div className={styles.main}>
       <main>{children}</main>
+    </div>
+    <div className={styles.contentWrapper}>
       <footer>{footer}</footer>
     </div>
   </>
