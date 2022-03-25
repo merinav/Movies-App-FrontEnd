@@ -10,7 +10,7 @@ type LayoutProps = {
 
 const Layout = ({ children, footer }: LayoutProps): JSX.Element => (
   <>
-    <div>{Header}</div>
+    <>{Header}</>
     <div className={styles.main}>
       <main>{children}</main>
     </div>
