@@ -1,10 +1,14 @@
 
 .main {
+    height: 150vh;
     margin-left: 50px;
     margin-right: 50px;
+    overflow: auto;
+    padding-top: 5px;
 }
 
 .contentWrapper {
     margin-left: 50px;
     margin-right: 50px;
+    padding-top: 102px;
 }
