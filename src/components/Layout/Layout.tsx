@@ -1,22 +1,18 @@
 import { ReactNode } from 'react';
-import Header from 'components/Header/Header';
 
 import styles from './Layout.module.css';
 
 type LayoutProps = {
   children: ReactNode;
+  header: ReactNode;
   footer: ReactNode;
 };
 
-const Layout = ({ children, footer }: LayoutProps): JSX.Element => (
+const Layout = ({ children, header, footer }: LayoutProps): JSX.Element => (
   <>
-    <>{Header}</>
-    <div className={styles.main}>
-      <main>{children}</main>
-    </div>
-    <div className={styles.contentWrapper}>
-      <footer>{footer}</footer>
-    </div>
+    {header}
+    <main className={styles.main}>{children}</main>
+    <footer className={styles.contentWrapper}>{footer}</footer>
   </>
 );
 
