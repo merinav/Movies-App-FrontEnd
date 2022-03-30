@@ -4,6 +4,7 @@
     padding:5px 50px;
     position: sticky;
     top: 0;   
+    width: 100%;
 }
 .icon {
     height: 60px;
