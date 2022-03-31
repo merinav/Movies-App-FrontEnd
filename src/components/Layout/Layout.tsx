@@ -12,7 +12,7 @@ const Layout = ({ children, header, footer }: LayoutProps): JSX.Element => (
   <>
     {header}
     <main className={styles.main}>{children}</main>
-    <footer className={styles.contentWrapper}>{footer}</footer>
+    {footer}
   </>
 );
 
