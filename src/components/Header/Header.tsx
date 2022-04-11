@@ -11,18 +11,10 @@ const Header = (): JSX.Element => {
 
   const [showSidebar, setShowSidebar] = useState(false);
 
-  let showHamburgerButtonTrue = false;
-
-  if (isMobile) {
-    if (showSidebar) {
-      showHamburgerButtonTrue = true;
-    }
-  }
-
   return (
     <header className={styles.header}>
       <MyMoviesLogo className={styles.icon} />
-      {isMobile && <HamburgerButton isActive={showHamburgerButtonTrue} onClick={() => setShowSidebar(!showSidebar)} />}
+      {isMobile && <HamburgerButton isActive={showSidebar} onClick={() => setShowSidebar(!showSidebar)} />}
       {isMobile && showSidebar && <Sidebar onBackDropClick={() => setShowSidebar(!showSidebar)} />}
     </header>
   );
