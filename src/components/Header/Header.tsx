@@ -1,5 +1,6 @@
 import HamburgerButton from 'components/HamburgerButton/HamburgerButton';
 import { MyMoviesLogo } from 'components/Icons';
+import NavigationLink from 'components/NavigationLink/NavigationLink';
 import Sidebar from 'components/Sidebar/Sidebar';
 import useMediaQuery from 'hooks/useMediaQuery';
 import { useState, useEffect } from 'react';
@@ -28,6 +29,7 @@ const Header = (): JSX.Element => {
   return (
     <header className={styles.header}>
       <MyMoviesLogo className={styles.icon} />
+      {!isMobile && <NavigationLink />}
       {isMobile && <HamburgerButton isActive={showSidebar} onClick={handleOnClick} />}
       {isMobile && showSidebar && <Sidebar onBackDropClick={handleOnBackDropClick} />}
     </header>

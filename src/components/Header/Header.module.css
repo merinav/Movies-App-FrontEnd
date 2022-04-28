@@ -1,11 +1,12 @@
 .header {
+    align-items: center;   
     background-color: var(--white);
     box-shadow: 0 0 5px grey;
     display: flex;
     justify-content: space-between;
     padding:5px 50px;
     position: sticky;
-    top: 0;   
+    top: 0;
 }
 .icon {
     height: 40px;
