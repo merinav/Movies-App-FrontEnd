@@ -1,4 +1,4 @@
-import NavigationLink from 'components/NavigationLink/NavigationLink';
+import MainNavigation from 'components/MainNavigation/MainNavigation';
 
 import styles from './Sidebar.module.css';
 
@@ -10,9 +10,9 @@ const Sidebar = ({ onBackDropClick }: SidebarProps): JSX.Element => {
   return (
     <div className={styles.sidebarBackdrop} onClick={onBackDropClick}>
       <div className={styles.sidebarTakeover}>
-        <ul className={styles.navmenu}>
-          <NavigationLink />
-        </ul>
+        <nav className={styles.navmenu}>
+          <MainNavigation />
+        </nav>
       </div>
     </div>
   );
