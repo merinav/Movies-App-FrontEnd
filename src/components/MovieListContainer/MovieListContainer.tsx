@@ -1,15 +1,9 @@
-import { useQuery } from 'react-query';
-import axios from 'axios';
+import React from 'react';
 
-async function fetchStatus() {
-  const { data } = await axios.get('http://localhost:3001/health');
-  return data;
-}
+import styles from './MovieListContainer.module.css';
 
-function MovieList(): JSX.Element {
-  const { data: healthy } = useQuery('status', fetchStatus);
-
-  return <p>API Status: {healthy ? 'Is running' : 'Something is wrong!'}</p>;
-}
+const MovieList = (): JSX.Element => {
+  return <div className={styles.main}>Movie List</div>;
+};
 
 export default MovieList;
