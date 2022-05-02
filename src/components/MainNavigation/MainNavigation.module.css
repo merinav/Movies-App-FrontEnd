@@ -1,0 +1,32 @@
+.headerNavigation{
+  align-items: center;
+  display: flex;  
+}
+
+.headerNavigationUnorderedList{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+}
+
+.headerNavigationListItem{
+  margin: 9px 20px;
+}
+
+.headerNavigationNavLink {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.headerNavigationNavLink:hover {
+  border-bottom: 2px solid var(--secondary);
+}
+
+.activeHeaderNavigationNavLink {
+  border-bottom: 2px solid var(--secondary);
+  color: var(--black);
+  text-decoration: none;
+  }
+
+
