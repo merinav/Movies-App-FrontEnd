@@ -12,7 +12,7 @@ const MovieListContainer = (): JSX.Element => {
   if (isLoading) {
     return <Loader />;
   } else {
-    return <div className={styles.main}>{print}</div>;
+    return <div className={styles.mainMovieListContainer}>{print}</div>;
   }
 };
 
