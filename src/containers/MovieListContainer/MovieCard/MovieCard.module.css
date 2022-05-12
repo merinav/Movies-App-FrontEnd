@@ -33,7 +33,7 @@
     margin: 0 0 auto;  
 }
 .movieCardRatingIcon{
-    fill: var(--ripeLemon);
+    fill: var(--rippleLemon);
     height: 15px;
     margin-right: 10px;
     width: 15px;
