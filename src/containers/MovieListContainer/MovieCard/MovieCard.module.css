@@ -1,0 +1,41 @@
+.movieCardWrapper{
+    border: 1px solid var(--grey);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    min-width: 100px;
+}
+.movieCardImage{
+    width: 100%;
+}
+.movieCardInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: space-between;
+    padding: 5px 10px;
+    word-break: break-all;
+}
+.movieCardMovieTitle{
+    font-size: 1.2rem;
+    font-weight: 700;
+    word-break: break-word;
+}
+.movieCardReleaseDate{
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    justify-content: space-between;
+}
+.movieCardMovieInfoParagraph{
+    font-weight: 700;
+    margin: 0 0 auto;  
+}
+.movieCardRatingIcon{
+    fill: var(--rippleLemon);
+    height: 15px;
+    margin-right: 10px;
+    width: 15px;
+}
+
