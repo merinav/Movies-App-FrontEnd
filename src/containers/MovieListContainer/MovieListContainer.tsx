@@ -8,17 +8,17 @@ import styles from './MovieListContainer.module.css';
 const MovieListContainer = (): JSX.Element => {
   const { isLoading, data } = useQuery('movies', getMovies);
 
-  const iterable = data?.movies;
-
-  const movieCards = iterable?.map((movie) => (
-    <MovieCard imageUrl={movie?.posterPath} key={movie?.movieId} releaseDate={movie?.releaseDate} title={movie?.title} voteAverage={movie?.voteAverage} />
-  ));
-
   if (isLoading) {
     return <Loader />;
   }
 
-  return <div className={styles.movieListContainer}>{movieCards}</div>;
+  return (
+    <div className={styles.movieListContainer}>
+      {data?.movies.map((movie) => (
+        <MovieCard imageUrl={movie?.posterPath} key={movie?.movieId} releaseDate={movie?.releaseDate} title={movie?.title} voteAverage={movie?.voteAverage} />
+      ))}
+    </div>
+  );
 };
 
 export default MovieListContainer;
