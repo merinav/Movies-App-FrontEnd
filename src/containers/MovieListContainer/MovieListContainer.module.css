@@ -7,3 +7,23 @@
     margin-bottom: 20px;
     margin-top: 40px;
 }
+
+@media (min-width: 1201px) {  .movieListContainer{
+    grid-template-columns: repeat(6,1fr);
+}}
+
+@media (max-width: 1200px) {  .movieListContainer{
+    grid-template-columns: repeat(5,1fr);
+}}
+
+@media (max-width: 992px) {  .movieListContainer{
+    grid-template-columns: repeat(3,1fr);
+}}
+
+@media (max-width: 768px) { .movieListContainer {
+        grid-template-columns: repeat(2,1fr);
+}}
+
+@media (max-width: 576px) { .movieListContainer {
+    grid-template-columns: repeat(1,1fr);
+}} 
