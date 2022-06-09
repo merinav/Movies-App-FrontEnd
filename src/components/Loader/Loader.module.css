@@ -1,13 +1,16 @@
-.loaderBackdrop{
+.loaderBackdrop {
   align-items: center;
   background: var(--white);
   bottom: 0;
   display: flex;
   justify-content: center;
   left: 0;
+  position:absolute;
   right: 0;
   top:0;
+  z-index: 100;
 }
+
 .loaderAnimation {
   left: 50%;
   position: absolute;
