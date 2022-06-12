@@ -15,8 +15,16 @@ const MovieListContainer = (): JSX.Element => {
   return (
     <div className={styles.movieListContainer}>
       {data?.movies.map((movie) => (
-        <MovieCard imageUrl={movie?.posterPath} key={movie?.movieId} releaseDate={movie?.releaseDate} title={movie?.title} voteAverage={movie?.voteAverage} />
+        <MovieCard
+          imageUrl={movie?.posterPath}
+          key={movie?.movieId}
+          movieId={movie?.movieId}
+          releaseDate={movie?.releaseDate}
+          title={movie?.title}
+          voteAverage={movie?.voteAverage}
+        />
       ))}
+      ;
     </div>
   );
 };
