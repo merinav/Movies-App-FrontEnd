@@ -16,7 +16,7 @@ This project contains source code and supporting files for My Movies application
 
 ## Project startup
 
-Before starting to develop, you need to install all the dependencies. To do so run `npm install` or `yarn install` command
+Before starting to develop, you need to install all the dependencies. To do so run `npm install` or `yarn install` command. You also need to add .env file to you directory and add "REACT_APP_API_URL=http://localhost:3001" to it.
 
 
 ## Development
